@@ -1,0 +1,251 @@
+:root {
+    /*Primary Colours*/
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    /*Nuetral Colours*/
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*************
+     Index
+1.) Typography
+2.) Positioning and containers
+3.) Desktop styles
+4.) Challenge Code     
+**************/
+
+
+/*************
+1.) Typography   
+**************/
+
+body {
+    font-family: "Spartan", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
+main {
+    padding: 2.5rem;
+}
+
+.header strong {
+    font-size: 1.8rem;
+    color: var(--very-dark-magenta);
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.header p {
+    color: var(--dark-grayish-magenta);
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li p {
+    color: var(--very-dark-magenta);
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+span {
+    display: block;
+    font-weight: normal;
+    color: var(--soft-pink);
+    margin-top: 0.1rem;
+}
+
+.comment1,
+.comment2,
+.comment3 {
+    color: white;
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.comment1 strong,
+.comment2 strong,
+.comment3 strong {
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    margin-top: 0.2rem;
+}
+
+
+/*************
+2.) Positioning and containers    
+**************/
+
+.review1 {
+    background-color: var(--light-grayish-magenta);
+    width: 90%;
+    max-width: 350px;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+.review1 img,
+.review2 img,
+.review3 img {
+    width: 1rem;
+}
+
+.review2 {
+    background-color: var(--light-grayish-magenta);
+    width: 90%;
+    max-width: 350px;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+.review3 {
+    background-color: var(--light-grayish-magenta);
+    width: 90%;
+    max-width: 350px;
+    margin: 0.5rem auto 2.5rem auto;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+.comment1 img {
+    border-radius: 100%;
+    width: 2rem;
+    float: left;
+}
+
+.comment2 img {
+    border-radius: 100%;
+    width: 2rem;
+    float: left;
+}
+
+.comment3 img {
+    border-radius: 100%;
+    width: 2rem;
+    float: left;
+}
+
+.comment1 {
+    background-color: var(--very-dark-magenta);
+    padding: 2rem 1.5rem;
+    border-radius: 0.3rem;
+    width: 90%;
+    margin: 0.8rem auto;
+    max-width: 300px;
+}
+
+.comment2 {
+    background-color: var(--very-dark-magenta);
+    padding: 2rem 1.5rem;
+    border-radius: 0.3rem;
+    width: 90%;
+    margin: 0.8rem auto;
+    max-width: 300px;
+}
+
+.comment3 {
+    background-color: var(--very-dark-magenta);
+    padding: 2rem 1.5rem;
+    border-radius: 0.3rem;
+    width: 90%;
+    margin: 0.8rem auto;
+    max-width: 300px;
+}
+
+
+/*************
+3.) Desktop styles    
+**************/
+
+@media screen and (min-width:1024px) {
+    body {
+        width: 100%;
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
+    }
+    main {
+        flex-flow: row wrap;
+        display: inline-flex;
+        width: 70%;
+        margin: auto;
+    }
+    .header {
+        width: 50%;
+        text-align: left;
+    }
+    .header strong {
+        font-size: 3rem;
+    }
+    .header p {
+        font-size: 1rem;
+    }
+    ul {
+        width: 50%;
+    }
+    li p {
+        display: inline;
+        margin-left: 1rem;
+    }
+    .review1,
+    .review2,
+    .review3 {
+        padding: 0.8rem 1rem;
+    }
+    .review1 {
+        margin-right: 17%;
+    }
+    .review2 {
+        margin-right: 8%;
+    }
+    .review3 {
+        margin-right: 0%;
+    }
+    .comments-container {
+        width: 100%;
+        display: flex;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .comment1 {
+        margin: 0 auto 1.5rem 0;
+    }
+    .comment2 {
+        margin: auto 1rem;
+    }
+    .comment3 {
+        margin: 1.5rem 0 0 auto;
+    }
+}
+
+
+/*************
+4.) Challenge Code     
+**************/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
