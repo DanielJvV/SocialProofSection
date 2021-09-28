@@ -30,17 +30,22 @@
 body {
     font-family: "Spartan", sans-serif;
     font-size: 15px;
+    min-height: 100vh;
     text-align: center;
     background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 main {
     padding: 2.5rem;
+    max-width: 1200px;
 }
 
-.header strong {
+.header b {
     font-size: 1.8rem;
     color: var(--very-dark-magenta);
     margin-bottom: 1.5rem;
@@ -191,7 +196,7 @@ span {
         width: 50%;
         text-align: left;
     }
-    .header strong {
+    .header b {
         font-size: 3rem;
     }
     .header p {
