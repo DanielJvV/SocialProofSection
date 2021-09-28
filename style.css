@@ -82,9 +82,9 @@ span {
     text-align: left;
 }
 
-.comment1 strong,
-.comment2 strong,
-.comment3 strong {
+.comment1 b,
+.comment2 b,
+.comment3 b {
     display: block;
     margin-bottom: 1rem;
     margin-left: 3rem;
